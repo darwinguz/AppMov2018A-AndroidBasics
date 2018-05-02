@@ -23,11 +23,11 @@
         app:fontFamily="@font/gugi_negrita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_actividad_2"
+        app:layout_constraintStart_toEndOf="@+id/btn_actividad"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_actividad_2"
+        android:id="@+id/btn_actividad"
         style="@style/myEstilo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

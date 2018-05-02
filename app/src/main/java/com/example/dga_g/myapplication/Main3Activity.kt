@@ -16,18 +16,21 @@ class Main3Activity : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
         setSupportActionBar(toolbar)
 
+
+//        txt_recibido_3.text =
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
         //code
-        btn_mapa.setOnClickListener {
-            v: View? ->  irMapa()
+        btn_pendiente.setOnClickListener { v: View? ->
+            irMapa()
         }
     }
 
-    fun irMapa(){
-        val intent = Intent(this, MapsActivity::class.java )
+    fun irMapa() {
+        val intent = Intent(this, MapsActivity::class.java)
         startActivity(intent)
     }
 }
