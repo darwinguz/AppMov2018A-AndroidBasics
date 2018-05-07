@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             Log.i("tag", "Ya tiene este permiso")
         }
 
+        btn_spinner_users.setOnClickListener(View.OnClickListener {
+            irActividadSpinners()
+        })
+
     }
 
     fun irActividadDos() {
@@ -54,6 +58,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun irActividadSpinners() {
+        val intent = Intent(this, SpinnerActivity::class.java)
+        startActivity(intent)
+    }
 
     companion object {
         val RESULTADO_PERMISO_CAMERA = 1

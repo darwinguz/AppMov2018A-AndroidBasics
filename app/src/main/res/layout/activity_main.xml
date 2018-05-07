@@ -9,21 +9,21 @@
 
     <TextView
         android:id="@+id/texto_central"
-        android:layout_width="268dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="42dp"
         android:text="@string/saludo"
         android:textColor="@color/colorWrad"
         android:textSize="30sp"
         app:fontFamily="@font/gugi_negrita"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_actividad"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_actividad"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -31,23 +31,34 @@
         style="@style/myEstilo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
         android:text="Change"
         android:textColor="@color/colorWrad"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_spinner_users"
+        app:layout_constraintStart_toStartOf="@+id/btn_spinner_users"
+        app:layout_constraintTop_toBottomOf="@+id/texto_central" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="116dp"
-        android:layout_height="149dp"
-        app:srcCompat="@drawable/momo"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="365dp" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_spinner_users"
+        app:srcCompat="@drawable/momo" />
+
+    <Button
+        android:id="@+id/btn_spinner_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:text="Spinner Usuarios"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actividad" />
 
 </android.support.constraint.ConstraintLayout>
