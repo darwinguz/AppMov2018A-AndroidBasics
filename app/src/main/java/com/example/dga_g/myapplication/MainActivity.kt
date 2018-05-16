@@ -62,14 +62,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun irActividadSQlite() {
-        val intent = Intent(this, Main2Activity::class.java)
+        val intent = Intent(this, SQLiteActivity::class.java)
         //pasar parametros a otra actividad
         intent.putExtra("nombre", "Nombre pasado")
         startActivity(intent)
     }
 
     fun irActividadFragmento() {
-        val intent = Intent(this, Main2Activity::class.java)
+        val intent = Intent(this, FragmentosActivity::class.java)
         //pasar parametros a otra actividad
         intent.putExtra("nombre", "Nombre pasado")
         startActivity(intent)
