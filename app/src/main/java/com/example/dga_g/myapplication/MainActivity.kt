@@ -3,10 +3,10 @@ package com.example.dga_g.myapplication
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -49,12 +49,42 @@ class MainActivity : AppCompatActivity() {
             irActividadSpinners()
         })
 
+        btn_ciclo_vida.setOnClickListener(View.OnClickListener {
+            irActividadCicloVida()
+        })
+
+        btn_framento.setOnClickListener(View.OnClickListener {
+            irActividadFragmento()
+        })
+        btn_sqllite.setOnClickListener(View.OnClickListener {
+            irActividadSQlite()
+        })
     }
+
+    fun irActividadSQlite() {
+        val intent = Intent(this, Main2Activity::class.java)
+        //pasar parametros a otra actividad
+        intent.putExtra("nombre", "Nombre pasado")
+        startActivity(intent)
+    }
+
+    fun irActividadFragmento() {
+        val intent = Intent(this, Main2Activity::class.java)
+        //pasar parametros a otra actividad
+        intent.putExtra("nombre", "Nombre pasado")
+        startActivity(intent)
+    }
+
 
     fun irActividadDos() {
         val intent = Intent(this, Main2Activity::class.java)
         //pasar parametros a otra actividad
         intent.putExtra("nombre", "Nombre pasado")
+        startActivity(intent)
+    }
+
+    fun irActividadCicloVida() {
+        val intent = Intent(this, CicloVidaActivity::class.java)
         startActivity(intent)
     }
 

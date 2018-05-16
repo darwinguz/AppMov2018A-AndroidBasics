@@ -56,7 +56,10 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
-        <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".CicloVidaActivity" />
+        <activity android:name=".FragmentosActivity" />
+        <activity android:name=".SQLiteActivity"></activity>
     </application>
 
 </manifest>
